@@ -1,0 +1,90 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0; /* Светло-зеленый фон */
+    color: #2e8b57; /* Темно-зеленый текст */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон контейнера */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #228b22; /* Зеленый заголовок */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2e8b57; /* Темно-зеленый текст */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #2e8b57; /* Зеленая рамка */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2e8b57; /* Темно-зеленый текст */
+    background-color: #f0fff0; /* Светло-зеленый фон */
+}
+
+input:focus {
+    outline: none;
+    border-color: #228b22; /* Ярко-зеленая рамка при фокусе */
+    box-shadow: 0 0 5px rgba(34, 139, 34, 0.5); /* Зеленая тень */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #228b22; /* Зеленый фон кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e8b57; /* Темно-зеленый фон при наведении */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0fff0; /* Светло-зеленый фон */
+    border: 1px solid #2e8b57; /* Зеленая рамка */
+    border-radius: 5px;
+}
+
+.result h3 {
+    margin-top: 0;
+    color: #228b22; /* Зеленый заголовок */
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #ffffff; /* Белый фон */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #2e8b57; /* Зеленая рамка */
+    color: #2e8b57; /* Темно-зеленый текст */
+}
