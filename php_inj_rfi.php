@@ -1,1 +1,1 @@
-<?php system('grep -iR "CODEBY" /var/www/'); ?>
+system('grep -iR "CODEBY" /var/www/')
